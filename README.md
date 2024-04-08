@@ -1,3 +1,28 @@
+### HOW TO RUN SETUP PROJECT TAILWIND
+
+##### 1 - How to install NPM
+
+[Node.js Setup](https://nodejs.org/en/download)
+
+##### 2 - Open other terminal and execute:
+
+`npm install`
+`npm run dev`
+
+##### 3 - How i implemented Tailwind with Django:
+
+[Documentation Link](https://dev.to/jazzdev/setting-up-tailwindcss-with-django-easy-guide-2o6j)
+
+### API
+
+#### Route
+
+### Video
+
+[Video](https://drive.google.com/file/d/13Z_-_tDX0csb2Y5_PXhRGD7ocEgpEb4i/view?usp=sharing)
+
+<p>http://127.0.0.1:8000/api/consumer/</p>
+
 <p style="text-align:center" dir="auto">
   <a href="#orientacoes">Orientações</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -28,19 +53,19 @@ A empresa de energia gostou do último projeto criado e com isso decidiu expandi
 
 #### A empresa de assinatura de energia te forneceu as seguintes premissas para o desconto:
 
-| Consumo (Média) | Desconto (Residencial) | Desconto (Comercial) | Desconto (Industrial) |
-| --- | --- | --- | --- |
-| < 10.000 kWh | 18% | 16% | 12% |
-| >= 10.000 kWh e <= 20.000 kWh | 22% | 18% | 15% |
-| > 20.000 kWh | 25% | 22% | 18% |
+| Consumo (Média)               | Desconto (Residencial) | Desconto (Comercial) | Desconto (Industrial) |
+| ----------------------------- | ---------------------- | -------------------- | --------------------- |
+| < 10.000 kWh                  | 18%                    | 16%                  | 12%                   |
+| >= 10.000 kWh e <= 20.000 kWh | 22%                    | 18%                  | 15%                   |
+| > 20.000 kWh                  | 25%                    | 22%                  | 18%                   |
 
 #### Alem disso, deve-se considerar os seguintes percentuais de cobertura baseado no consumo:
 
 | Consumo (Média) - kWh | < 10.000 kWh | >= 10.000 kWh e <= 20.000 kWh | > 20.000 kWh |
-| --- | --- | --- | --- |
-| Cobertura*** | 90% | 95% | 99% |
+| --------------------- | ------------ | ----------------------------- | ------------ |
+| Cobertura\*\*\*       | 90%          | 95%                           | 99%          |
 
-*** Cobertura é o valor da energia que o consumidor irá receber da empresa de assinatura de energia em relação à energia consumida
+\*\*\* Cobertura é o valor da energia que o consumidor irá receber da empresa de assinatura de energia em relação à energia consumida
 
 ### A empresa tem:
 
@@ -57,7 +82,6 @@ A empresa de energia gostou do último projeto criado e com isso decidiu expandi
 4. Deverá ser criada uma interface para o cadastro de consumidores, essa interface deve ser disponibilizada pelo Django e deve consumir a API para funcionar;
 5. Deverá ser criado um acesso via API para a listagem de consumidores com seus descontos, essa listagem deve permitir a filtragem;
 6. Deverá ser criada uma interface para a listagem de consumidores, essa interface deve ser disponibilizada pelo Django e deve consumir a API para funcionar;
-
 
 <hr>
 <h2 id="etapa-2" style="text-align:center;border-bottom:none">Etapa 2</h2>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'css/form.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-primary text-white flex items-center justify-center rounded-md h-screen"
+  >
+    <form
+      method="post"
+      class="w-96 flex flex-col p-6 border-secondary border gap-2 rounded-md"
+    >
+      {% csrf_token %}{{form}}
+      <button class="w-full bg-secondary rounded-md py-2" type="submit">
+        Calcular
+      </button>
+    </form>
+  </body>
+</html>
+l

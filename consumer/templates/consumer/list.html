@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consumers</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Documento</th>
+          <th>Cidade</th>
+          <th>Estado</th>
+          <th>Consumo</th>
+          <th>Tipo</th>
+          <th>Cobertura</th>
+          <th>Tarifa de distribuição</th>
+          <th>Desconto</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in consumers %}
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.document }}</td>
+          <td>{{ item.city }}</td>
+          <td>{{ item.state }}</td>
+          <td>{{ item.consumption_range }}kWh</td>
+          <td>{{ item.consumer_type }}</td>
+          <td>{{ item.cover_value }}</td>
+          <td>{{ item.distributor_tax }}</td>
+          <td>R$ {{ item.discount_value }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
